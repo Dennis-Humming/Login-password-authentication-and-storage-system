@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="520.0">
+         <left>
+            <AnchorPane prefHeight="407.0" prefWidth="333.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="brandingImageView" fitHeight="407.0" fitWidth="333.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/333.PNG" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="407.0" prefWidth="391.0" style="-fx-background-color: #FFFF;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="lockImageView" fitHeight="60.0" fitWidth="74.0" layoutX="166.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/444.PNG" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="48.0" layoutY="152.0" text="Username:" />
+                  <Label layoutX="46.0" layoutY="194.0" prefHeight="20.0" prefWidth="82.0" text="Password:" />
+                  <TextField fx:id="usernameTextField" layoutX="144.0" layoutY="147.0" prefHeight="26.0" prefWidth="173.0" promptText="Username" />
+                  <PasswordField fx:id="enterPasswordField" layoutX="144.0" layoutY="189.0" prefHeight="26.0" prefWidth="173.0" promptText="Password" />
+                  <Button fx:id="loginButton" alignment="CENTER" layoutX="73.0" layoutY="263.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #FF0D00;" text="Login" textFill="WHITE" />
+                  <Button fx:id="cancelButton" alignment="CENTER" layoutX="71.0" layoutY="350.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #FF0D00;" text="Cancel" textFill="WHITE" />
+                  <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="33.0" layoutY="233.0" prefHeight="20.0" prefWidth="328.0" />
+                  <Button fx:id="registerButton" alignment="CENTER" layoutX="73.0" layoutY="306.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="32.0" prefWidth="249.0" style="-fx-background-color: #FF0D00;" text="Register" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+   </children>
+</GridPane>
